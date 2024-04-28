@@ -1,0 +1,79 @@
+body {
+    background-color:white;
+}
+main {
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 70px;
+}
+header {
+    width: 1500px;
+    height: 320px;
+}
+.bookshelfbanner, .bookshelfbanner img{
+    height: 300px;
+    width: 98vw;
+    position: absolute;
+}
+.logo {
+    position: absolute;
+    float: left;
+    margin-top: 165px;
+    margin-left: 100px;
+}
+.topnav {
+    float: left;
+    position: relative;
+    height: 60px;
+    width: 1000px;
+    float: left;
+    margin-top: 300px;
+}
+.topnav a {
+    float: left;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    color:#664229;
+}
+.topnav a:hover {
+    font-weight: bold;
+    color:white;
+    background-color:#664229;
+    transition: background-color 0.3s, color 0.3s;
+}
+.topnav a.active {
+    color:white;
+    background-color:#664229;
+}
+h1 {
+    color: #664229;
+    font-weight: bold;
+}
+h2 {
+    color: #664229;
+    font-weight: bold;
+    font-size: large;
+}
+.wholeform {
+    width: 90vw;
+    height: 500px;
+}
+.seriesSelect {
+    width: 400px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#startdate {
+    margin-top: 0;
+}
+footer {
+    padding-top: 50px;
+    margin-right: 100px;
+    float: right;
+}

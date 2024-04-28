@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JDNNHKJ3QJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JDNNHKJ3QJ');
+    </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, Books, Manga, Review">
+        <meta name="author" content="Junji Ito, Kentaro Miura, Hajime Isayama, Gege Akutami, Tatsuki Fujimoto, Yoshihiro Togashi, Masashi Kishimoto">
+        <title>Bookshelves - Home Page</title>
+        <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="bookshelfbanner">
+                <img src="Other Photos/bookshelf banner.png" alt="Bookshelves Banner">
+            </div>
+            <div class="logo">
+                <img src="Other Photos/bookshelveslogo.png" alt="Bookshelves Logo" width="150">
+            </div>
+        </nav>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="checkout.html">Check-Out</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </header>
+    <style>
+        .slideshow-container {
+            max-width: 1000%;
+            position: relative;
+            margin: auto;
+        }
+        .mySlides {
+            display: none;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+    </style>
+    <main>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 2</div>
+              <img src="Manga part 1/banner photo 1.png" style="width: 1000px;">
+              <div class="text">Check out some new Junji Ito additions!</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 2</div>
+              <img src="Manga part 1/banner photo 2.PNG" style="width: 1000px;">
+              <div class="text">Looking for something new? Try Jujutsu Kaisen!</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+     
+        <div class="communityLibraryHeader">
+            <h1>Current Community Library</h1>
+        </div>
+        <container class ="currentLibrary">
+            <div>
+                <img src="Manga part 1/aot vol 1.png" alt="aot Vol 1" width="180" height="290">
+                Attack on Titan Volume 1
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 2.png" alt="aot Volume 2" width="180" height="290">
+                Attack On Titan Volume 2
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 3.png" alt="aot Volume 3" width="180" height="290">
+                Attack On Titan Volume 3
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 4.png" alt="aot Volume 4" width="180" height="290">
+                Attack On Titan Volume 4
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 5.png" alt="aot Volume 5" width="180" height="290">
+                Attack On Titan Volume 5
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 6.png" alt="aot Volume 6" width="180" height="290">
+                Attack On Titan Volume 6
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 7.png" alt="aot Volume 7" width="180" height="290">
+                Attack On Titan Volume 7
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 8.png" alt="aot Volume 8" width="180" height="290">
+                Attack On Titan Volume 8
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 9.png" alt="aot Volume 9" width="180" height="290">
+                Attack On Titan Volume 9
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 10.png" alt="aot Volume 10" width="180" height="290">
+                Attack On Titan Volume 10
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 11.png" alt="aot Volume 11" width="180" height="290">
+                Attack On Titan Volume 11
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 12.png" alt="aot Volume 12" width="180" height="290">
+                Attack On Titan Volume 12
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 13.png" alt="aot Volume 13" width="180" height="290">
+                Attack On Titan Volume 13
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 14.png" alt="aot Volume 14" width="180" height="290">
+                Attack On Titan Volume 14
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 15.png" alt="aot Volume 15" width="180" height="290">
+                Attack On Titan Volume 15
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 16.png" alt="aot Volume 16" width="180" height="290">
+                Attack On Titan Volume 16
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 17.png" alt="aot Volume 17" width="180" height="290">
+                Attack On Titan Volume 17
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 18.png" alt="aot Volume 18" width="180" height="290">
+                Attack On Titan Volume 18
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 19.png" alt="aot Volume 19" width="180" height="290">
+                Attack On Titan Volume 19
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 20.png" alt="aot Volume 20" width="180" height="290">
+                Attack On Titan Volume 20
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 21.png" alt="aot Volume 21" width="180" height="290">
+                Attack On Titan Volume 21
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 22.png" alt="aot Volume 22" width="180" height="290">
+                Attack On Titan Volume 22
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 23.png" alt="aot Volume 23" width="180" height="290">
+                Attack On Titan Volume 23
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 24.png" alt="aot Volume 24" width="180" height="290">
+                Attack On Titan Volume 24
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 25.png" alt="aot Volume 25" width="180" height="290">
+                Attack On Titan Volume 25
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 26.png" alt="aot Volume 26" width="180" height="290">
+                Attack On Titan Volume 26
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 27.png" alt="aot Volume 27" width="180" height="290">
+                Attack On Titan Volume 27
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 28.png" alt="aot Volume 28" width="180" height="290">
+                Attack On Titan Volume 28
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 29.png" alt="aot Volume 29" width="180" height="290">
+                Attack On Titan Volume 29
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 30.png" alt="aot Volume 30" width="180" height="290">
+                Attack On Titan Volume 30
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 31.png" alt="aot Volume 31" width="180" height="290">
+                Attack On Titan Volume 31
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 32.png" alt="aot Volume 32" width="180" height="290">
+                Attack On Titan Volume 32
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 33.png" alt="aot Volume 33" width="180" height="290">
+                Attack On Titan Volume 33
+            </div>
+            <div>
+                <img src="Manga part 1/aot vol 34.png" alt="aot Volume 34" width="180" height="290">
+                Attack On Titan Volume 34
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 0.png" alt="jjk Volume 0" width="180" height="290">
+                Jujutsu Kaisen Volume 0
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 1.png" alt="jjk Volume 1" width="180" height="290">
+                Jujutsu Kaisen Volume 1
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 2.png" alt="jjk Volume 2" width="180" height="290">
+                Jujutsu Kaisen Volume 2
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 3.png" alt="jjk Volume 3" width="180" height="290">
+                Jujutsu Kaisen Volume 3
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 4.png" alt="jjk Volume 4" width="180" height="290">
+                Jujutsu Kaisen Volume 4
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 5.png" alt="jjk  Volume 5" width="180" height="290">
+                Jujutsu Kaisen Volume 5
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 6.png" alt="jjk Volume 6" width="180" height="290">
+                Jujutsu Kaisen Volume 6
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 7.png" alt="jjk Volume 7" width="180" height="290">
+                Jujutsu Kaisen Volume 7
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 8.png" alt="jjk Volume 8" width="180" height="290">
+                Jujutsu Kaisen Volume 8
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 9.png" alt="jjk Volume 9" width="180" height="290">
+                Jujutsu Kaisen Volume 9
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 10.png" alt="jjk Volume 10" width="180" height="290">
+                Jujutsu Kaisen Volume 10
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 11.png" alt="jjk Volume 11" width="180" height="290">
+                Jujutsu Kaisen Volume 11
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 13.png" alt="jjk Vol 13" width="180" height="290">
+                Jujutsu Kaisen Volume 13
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 14.png" alt="jjk Vol 14" width="180" height="290">
+                Jujutsu Kaisen Volume 14
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 15.png" alt="jjk Vol 15" width="180" height="290">
+                Jujutsu Kaisen Volume 15
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 16.png" alt="jjk Vol 16" width="180" height="290">
+                Jujutsu Kaisen Volume 16
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 17.png" alt="jjk Volume 17" width="180" height="290">
+                Jujutsu Kaisen Volume 17
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 18.png" alt="jjk Volume 18" width="180" height="290">
+                Jujutsu Kaisen Volume 18
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 19.png" alt="jjk Volume 19" width="180" height="290">
+                Jujutsu Kaisen Volume 19
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 20.png" alt="jjk Volume 20" width="180" height="290">
+                Jujutsu Kaisen Volume 20
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 21.png" alt="jjk Volume 21" width="180" height="290">
+                Jujutsu Kaisen Volume 21
+            </div>
+            <div>
+                <img src="Manga part 2/jjk vol 22.png" alt="jjk Volume 22" width="180" height="290">
+                Jujutsu Kaisen Volume 22
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 1.png" alt="csm Volume 1" width="180" height="290">
+                Chainsaw Man Volume 1
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 2.png" alt="csm Volume 2" width="180" height="290">
+                Chainsaw Man Volume 2
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 3.png" alt="csm Volume 3" width="180" height="290">
+                Chainsaw Man Volume 3
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 4.png" alt="csm Volume 4" width="180" height="290">
+                Chainsaw Man Volume 4
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 5.png" alt="csm Volume 5" width="180" height="290">
+                Chainsaw Man Volume 5
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 7.png" alt="csm Volume 7" width="180" height="290">
+                Chainsaw Man Volume 7
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 8.png" alt="csm Volume 8" width="180" height="290">
+                Chainsaw Man Volume 8
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 9.png" alt="csm Volume 9" width="180" height="290">
+                Chainsaw Man Volume 9
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 10.png" alt="csm Volume 10" width="180" height="290">
+                Chainsaw Man Volume 10
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 11.png" alt="csm Volume 11" width="180" height="290">
+                Chainsaw Man Volume 11
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 12.png" alt="csm Volume 12" width="180" height="290">
+                Chainsaw Man Volume 12
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 13.png" alt="csm Volume 13" width="180" height="290">
+                Chainsaw Man Volume 13
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 14.png" alt="csm Volume 14" width="180" height="290">
+                Chainsaw Man Volume 14
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 15.png" alt="csm Volume 15" width="180" height="290">
+                Chainsaw Man Volume 15
+            </div>
+            <div>
+                <img src="Manga part 1/csm vol 16.png" alt="csm Volume 16" width="180" height="290">
+                Chainsaw Man Volume 16
+            </div>
+            <div>
+                <img src="Manga part 1/a silent voice vol 1.png" alt="asv Volume 1" width="180" height="290">
+                A Silent Voice Volume 1
+            </div>
+            <div>
+                <img src="Manga part 1/a silent voice vol 2.png" alt="asv Volume 2" width="180" height="290">
+                A Silent Voice Volume 2
+            </div>
+            <div>
+                <img src="Manga part 1/a silent voice vol 3.png" alt="asv Volume 3" width="180" height="290">
+                A Silent Voice Volume 3
+            </div>
+            <div>
+                <img src="Manga part 1/a silent voice vol 4.png" alt="asv Volume 4" width="180" height="290">
+                A Silent Voice Volume 4
+            </div>
+            <div>
+                <img src="Manga part 1/a silent voice vol 5.png" alt="asv Volume 5" width="180" height="290">
+                A Silent Voice Volume 5
+            </div>
+            <div>
+                <img src="Manga part 1/a silent voice vol 6.png" alt="asv Volume 6" width="180" height="290">
+                A Silent Voice Volume 6
+            </div>
+            <div>
+                <img src="Manga part 1/a silent voice vol 7.png" alt="asv Volume 7" width="180" height="290">
+                A Silent Voice Volume 7
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 1.png" alt="adh Volume 1" width="180" height="290">
+                Ajin Demi Human Volume 1
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 2.png" alt="adh Volume 2" width="180" height="290">
+                Ajin Demi Human Volume 2
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 3.png" alt="adh Volume 3" width="180" height="290">
+                Ajin Demi Human Volume 3
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 4.png" alt="adh Volume 4" width="180" height="290">
+                Ajin Demi Human Volume 4
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 5.png" alt="adh Volume 5" width="180" height="290">
+                Ajin Demi Human Volume 5
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 6.png" alt="adh Volume 6" width="180" height="290">
+                Ajin Demi Human Volume 6
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 7.png" alt="adh Volume 7" width="180" height="290">
+                Ajin Demi Human Volume 7
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 8.png" alt="adh Volume 8" width="180" height="290">
+                Ajin Demi Human Volume 8
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 9.png" alt="adh Volume 9" width="180" height="290">
+                Ajin Demi Human Volume 9
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 10.png" alt="adh Volume 10" width="180" height="290">
+                Ajin Demi Human Volume 10
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 11.png" alt="adh Volume 11" width="180" height="290">
+                Ajin Demi Human Volume 11
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 12.png" alt="adh Volume 12" width="180" height="290">
+                Ajin Demi Human Volume 12
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 13.png" alt="adh Volume 13" width="180" height="290">
+                Ajin Demi Human Volume 13
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 14.png" alt="Aadhman Volume 14" width="180" height="290">
+                Ajin Demi Human Volume 14
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 15.png" alt="adh Volume 15" width="180" height="290">
+                Ajin Demi Human Volume 15
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 16.png" alt="adh Volume 16" width="180" height="290">
+                Ajin Demi Human Volume 16
+            </div>
+            <div>
+                <img src="Manga part 1/ajin vol 17.png" alt="adh Volume 17" width="180" height="290">
+                Ajin Demi Human Volume 17
+            </div>
+            <div>
+                <img src="Manga part 1/berserk vol 1.png" alt="bde Volume 1" width="180" height="290">
+                Berserk Deluxe Edition Volume 1
+            </div>
+            <div>
+                <img src="Manga part 1/berserk vol 2.png" alt="bde Volume 2" width="180" height="290">
+                Berserk Deluxe Edition Volume 2
+            </div>
+            <div>
+                <img src="Manga part 1/berserk vol 3.png" alt="bde Volume 3" width="180" height="290">
+                Berserk Deluxe Edition Volume 3
+            </div>
+            <div>
+                <img src="Manga part 1/berserk vol 4.png" alt="bde Volume 4" width="180" height="290">
+                Berserk Deluxe Edition Volume 4
+            </div>
+            <div>
+                <img src="Manga part 1/berserk vol 5.png" alt="bde Volume 5" width="180" height="290">
+                Berserk Deluxe Edition Volume 5
+            </div>
+            <div>
+                <img src="Manga part 1/berserk vol 6.png" alt="bde Volume 6" width="180" height="290">
+                Berserk Deluxe Edition Volume 6
+            </div>
+            <div>
+                <img src="Manga part 1/berserk vol 7.png" alt="bde Volume 7" width="180" height="290">
+                Berserk Deluxe Edition Volume 7
+            </div>
+            <div>
+                <img src="Manga part 1/berserk vol 8.png" alt="bde Volume 8" width="180" height="290">
+                Berserk Deluxe Edition Volume 8
+            </div>
+            <div>
+                <img src="Manga part 1/berserk vol 9.png" alt="bde Volume 9" width="180" height="290">
+                Berserk Deluxe Edition Volume 9
+            </div>
+            <div>
+                <img src="Manga part 1/berserk vol 10.png" alt="bde Volume 10" width="180" height="290">
+                Berserk Deluxe Edition Volume 10
+            </div>
+            <div>
+                <img src="Manga part 1/berserk vol 11.png" alt="bde Volume 11" width="180" height="290">
+                Berserk Deluxe Edition Volume 11
+            </div>
+            <div>
+                <img src="Manga part 1/berserk vol 12.png" alt="bde Volume 12" width="180" height="290">
+                Berserk Deluxe Edition Volume 12
+            </div>
+            <div>
+                <img src="Manga part 1/deathnote vol 1.png" alt="dbe Volume 1" width="180" height="290">
+                Deathnote Black Edition Volume 1
+            </div>
+            <div>
+                <img src="Manga part 1/deathnote vol 2.png" alt="dbe Volume 2" width="180" height="290">
+                Deathnote Black Edition Volume 2
+            </div>
+            <div>
+                <img src="Manga part 1/deathnote vol 3.png" alt="dbe Volume 3" width="180" height="290">
+                Deathnote Black Edition Volume 3
+            </div>
+            <div>
+                <img src="Manga part 1/deathnote vol 4.png" alt="dbe Volume 4" width="180" height="290">
+                Deathnote Black Edition Volume 4
+            </div>
+            <div>
+                <img src="Manga part 1/deathnote vol 5.png" alt="dbe Volume 5" width="180" height="290">
+                Deathnote Black Edition Volume 5
+            </div>
+            <div>
+                <img src="Manga part 1/deathnote vol 6.png" alt="dbe Volume 6" width="180" height="290">
+                Deathnote Black Edition Volume 6
+            </div>
+            <div>
+                <img src="Manga part 1/dms vol 1.png" alt="dms Volume 1" width="180" height="290">
+                Demon Slayer Volume 1
+            </div>
+            <div>
+                <img src="Manga part 1/dms vol 2.png" alt="dms Volume 2" width="180" height="290">
+                Demon Slayer Volume 2
+            </div>
+            <div>
+                <img src="Manga part 1/dms vol 3.png" alt="dms Volume 3" width="180" height="290">
+                Demon Slayer Volume 3
+            </div>
+            <div>
+                <img src="Manga part 1/dms vol 4.png" alt="dms Volume 4" width="180" height="290">
+                Demon Slayer Volume 4
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 5.png" alt="dms Volume 5" width="180" height="290">
+                Demon Slayer Volume 5
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 6.png" alt="dms Volume 6" width="180" height="290">
+                Demon Slayer Volume 6
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 7.png" alt="dms Volume 7" width="180" height="290">
+                Demon Slayer Volume 7
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 8.png" alt="dms Volume 8" width="180" height="290">
+                Demon Slayer Volume 8
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 9.png" alt="dms Volume 9" width="180" height="290">
+                Demon Slayer Volume 9
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 10.png" alt="dms Volume 10" width="180" height="290">
+                Demon Slayer Volume 10
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 11.png" alt="dms Volume 11" width="180" height="290">
+                Demon Slayer Volume 11
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 12.png" alt="dms Volume 12" width="180" height="290">
+                Demon Slayer Volume 12
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 13.png" alt="dms Volume 13" width="180" height="290">
+                Demon Slayer Volume 13
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 14.png" alt="dms Volume 14" width="180" height="290">
+                Demon Slayer Volume 14
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 15.png" alt="dms Volume 15" width="180" height="290">
+                Demon Slayer Volume 15
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 16.png" alt="dms Volume 16" width="180" height="290">
+                Demon Slayer Volume 16
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 17.png" alt="dms Volume 17" width="180" height="290">
+                Demon Slayer Volume 17
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 18.png" alt="dms Volume 18" width="180" height="290">
+                Demon Slayer Volume 18
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 19.png" alt="dms Volume 19" width="180" height="290">
+                Demon Slayer Volume 19
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 20.png" alt="dms Volume 20" width="180" height="290">
+                Demon Slayer Volume 20
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 21.png" alt="dms Volume 21" width="180" height="290">
+                Demon Slayer Volume 21
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 22.png" alt="dms Volume 22" width="180" height="290">
+                Demon Slayer Volume 22
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 23.png" alt="dms Volume 23" width="180" height="290">
+                Demon Slayer Volume 23
+            </div>
+            <div>
+                <img src="Manga part 2/dms vol 23.png" alt="dms Volume 23" width="180" height="290">
+                Demon Slayer Volume 23
+            </div>
+            <div>
+                <img src="Manga part 2/junji ito black paradox.png" alt="Black Paradox" width="180" height="290">
+                Black Paradox
+            </div>
+            <div>
+                <img src="Manga part 2/junji ito deserter.png" alt="Deserter" width="180" height="290">
+                Deserter
+            </div>
+            <div>
+                <img src="Manga part 2/junji ito dissolving classroom.png" alt="Dissolving Classroom" width="180" height="290">
+                Dissolving Classroom
+            </div>
+            <div>
+                <img src="Manga part 2/junji ito frankenstein.png" alt="Frankenstein" width="180" height="290">
+                Frankenstein
+            </div>
+            <div>
+                <img src="Manga part 2/junji ito lovesickness.png" alt="Lovesickness" width="180" height="290">
+                Lovesickness
+            </div>
+            <div>
+                <img src="Manga part 2/junji ito no longer human.png" alt="No Longer Human" width="180" height="290">
+                No Longer Human
+            </div>
+            <div>
+                <img src="Manga part 2/junji ito remina.png" alt="Remina" width="180" height="290">
+                Remina
+            </div>
+            <div>
+                <img src="Manga part 2/junji ito sensor.png" alt="Sensor" width="180" height="290">
+                Sensor
+            </div>
+            <div>
+                <img src="Manga part 2/junji ito shiver.png" alt="Shiver" width="180" height="290">
+                Shiver
+            </div>
+            <div>
+                <img src="Manga part 2/junji ito smashed.png" alt="Smashed" width="180" height="290">
+                Smashed
+            </div>
+            <div>
+                <img src="Manga part 2/junji ito soichi.png" alt="Soichi" width="180" height="290">
+                Soichi
+            </div>
+            <div>
+                <img src="Manga part 2/junji ito the liminal zone.png" alt="The Liminal Zone" width="180" height="290">
+                The Liminal Zone
+            </div>
+            <div>
+                <img src="Manga part 2/neon genesis vol 1.png" alt="nge Volume 1" width="180" height="290">
+                Neongenesis Evangelion Volume 1
+            </div>
+            <div>
+                <img src="Manga part 2/neon genesis vol 2.png" alt="nge Volume 2" width="180" height="290">
+                Neongenesis Evangelion Volume 2
+            </div>
+            <div>
+                <img src="Manga part 2/neon genesis vol 3.png" alt="nge Volume 3" width="180" height="290">
+                Neongenesis Evangelion Volume 3
+            </div>
+            <div>
+                <img src="Manga part 2/neon genesis vol 4.png" alt="nge Volume 4" width="180" height="290">
+                Neongenesis Evangelion Volume 4
+            </div>
+            <div>
+                <img src="Manga part 2/neon genesis vol 5.png" alt="nge Volume 5" width="180" height="290">
+                Neongenesis Evangelion Volume 5
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 1.png" alt="tye Volume 1" width="180" height="290">
+                To Your Eternity Volume 1
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 2.png" alt="tye Volume 2" width="180" height="290">
+                To Your Eternity Volume 2
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 3.png" alt="tye Volume 3" width="180" height="290">
+                To Your Eternity Volume 3
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 4.png" alt="tye Volume 4" width="180" height="290">
+                To Your Eternity Volume 4
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 5.png" alt="tye Volume 5" width="180" height="290">
+                To Your Eternity Volume 5
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 6.png" alt="tye Volume 6" width="180" height="290">
+                To Your Eternity Volume 6
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 7.png" alt="tye Volume 7" width="180" height="290">
+                To Your Eternity Volume 7
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 8.png" alt="tye Volume 8" width="180" height="290">
+                To Your Eternity Volume 8
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 9.png" alt="tye Volume 9" width="180" height="290">
+                To Your Eternity Volume 9
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 10.png" alt="tye Volume 10" width="180" height="290">
+                To Your Eternity Volume 10
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 11.png" alt="tye Volume 11" width="180" height="290">
+                To Your Eternity Volume 11
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 12.png" alt="tye Volume 12" width="180" height="290">
+                To Your Eternity Volume 12
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 13.png" alt="tye Volume 13" width="180" height="290">
+                To Your Eternity Volume 13
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 14.png" alt="tye Volume 14" width="180" height="290">
+                To Your Eternity Volume 14
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 15.png" alt="tye Volume 15" width="180" height="290">
+                To Your Eternity Volume 15
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 16.png" alt="tye Volume 16" width="180" height="290">
+                To Your Eternity Volume 16
+            </div>
+            <div>
+                <img src="Manga part 2/to your eternity vol 17.png" alt="tye Volume 17" width="180" height="290">
+                To Your Eternity Volume 17
+            </div>
+            <div>
+                <img src="Manga part 2/tokyo ghoul vol 1.png" alt="Tokyo Ghoul Volume 1" width="180" height="290">
+                Tokyo Ghoul Volume 1
+            </div>
+            <div>
+                <img src="Manga part 2/tokyo ghoul vol 2.png" alt="Tokyo Ghoul Volume 2" width="180" height="290">
+                Tokyo Ghoul Volume 2
+            </div>
+            <div>
+                <img src="Manga part 2/tokyo ghoul vol 3.png" alt="Tokyo Ghoul Volume 3" width="180" height="290">
+                Tokyo Ghoul Volume 3
+            </div>
+            <div>
+                <img src="Manga part 2/tokyo ghoul vol 4.png" alt="Tokyo Ghoul Volume 4" width="180" height="290">
+                Tokyo Ghoul Volume 4
+            </div>
+            <div>
+                <img src="Manga part 2/tokyo ghoul vol 5.png" alt="Tokyo Ghoul Volume 5" width="180" height="290">
+                Tokyo Ghoul Volume 5
+            </div>
+            <div>
+                <img src="Manga part 2/tokyo ghoul vol 6.png" alt="Tokyo Ghoul Volume 6" width="180" height="290">
+                Tokyo Ghoul Volume 6
+            </div>
+            <div>
+                <img src="Manga part 2/tokyo ghoul vol 7.png" alt="Tokyo Ghoul Volume 7" width="180" height="290">
+                Tokyo Ghoul Volume 7
+            </div>
+            <div>
+                <img src="Manga part 2/tokyo ghoul vol 8.png" alt="Tokyo Ghoul Volume 8" width="180" height="290">
+                Tokyo Ghoul Volume 8
+            </div>
+            <div>
+                <img src="Manga part 2/tokyo ghoul vol 9.png" alt="Tokyo Ghoul Volume 9" width="180" height="290">
+                Tokyo Ghoul Volume 9
+            </div>
+            <div>
+                <img src="Manga part 2/tokyo ghoul vol 10.png" alt="Tokyo Ghoul Volume 10" width="180" height="290">
+                Tokyo Ghoul Volume 10
+            </div>
+            <div>
+                <img src="Manga part 2/tokyo ghoul vol 11.png" alt="Tokyo Ghoul Volume 11" width="180" height="290">
+                Tokyo Ghoul Volume 11
+            </div>
+            <div>
+                <img src="Manga part 3/tokyo ghoul vol 12.png" alt="Tokyo Ghoul Volume 12" width="180" height="290">
+                Tokyo Ghoul Volume 12
+            </div>
+            <div>
+                <img src="Manga part 3/tokyo ghoul vol 13.png" alt="Tokyo Ghoul Volume 13" width="180" height="290">
+                Tokyo Ghoul Volume 13
+            </div>
+            <div>
+                <img src="Manga part 3/tokyo ghoul vol 14.png" alt="Tokyo Ghoul Volume 14" width="180" height="290">
+                Tokyo Ghoul Volume 14
+            </div>
+            <div>
+                <img src="Manga part 2/dune book 1.png" alt="Dune Book 1" width="180" height="290">
+                Dune
+            </div>
+            <div>
+                <img src="Manga part 2/dune book 2.png" alt="Dune Book 2" width="180" height="290">
+                Dune Messiah
+            </div>
+            <div>
+                <img src="Manga part 2/dune book 3.png" alt="Dune Book 3" width="180" height="290">
+                Children of Dune
+            </div>
+            <div>
+                <img src="Manga part 2/dune book 4.png" alt="Dune Book 4" width="180" height="290">
+                God Emperor of Dune
+            </div>
+            <div>
+                <img src="Manga part 2/dune book 5.png" alt="Dune Book 5" width="180" height="290">
+                Heretics of Dune
+            </div>
+            <div>
+                <img src="Manga part 2/dune book 6.png" alt="Dune Book 6" width="180" height="290">
+                Chapter-House: Dune
+            </div>
+            <div>
+                <img src="Manga part 3/You book 1.png" alt="You Book 1" width="180" height="290">
+                You
+            </div>
+            <div>
+                <img src="Manga part 3/You book 2.png" alt="You Book 2" width="180" height="290">
+                You Love Me
+            </div>
+            <div>
+                <img src="Manga part 3/You book 3.png" alt="You Book 3" width="180" height="290">
+                Hidden Bodies
+            </div>
+        </container>
+    </main>
+    <footer>
+        <p>Follow Us for more!</p>
+        <a href="https://www.facebook.com/login/"><img src="Other Photos/facebook.png" alt="facebook" height="50"></a>
+        <a href="https://www.instagram.com/accounts/login/"><img src="Other Photos/instagram.png" alt="instagram" height="50"></a>
+        <a href="https://twitter.com/i/flow/login"><img src="Other Photos/twitter (2).png" alt="twitter" height="50"></a>
+        <a href="https://www.pinterest.com/"><img src="Other Photos/pinterest.png" alt="pinterest" height="50"></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JDNNHKJ3QJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JDNNHKJ3QJ');
+    </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, Books, Manga, Review">
+        <meta name="author" content="Junji Ito, Kentaro Miura, Hajime Isayama, Gege Akutami, Tatsuki Fujimoto, Yoshihiro Togashi, Masashi Kishimoto">
+        <title>Bookshelves - Home Page</title>
+        <link rel="stylesheet" href="checkoutstyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="bookshelfbanner">
+                <img src="Other Photos/bookshelf banner.png" alt="Bookshelves Banner">
+            </div>
+            <div class="logo">
+                <img src="Other Photos/bookshelveslogo.png" alt="Bookshelves Logo" width="150">
+            </div>
+        </nav>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="checkout.html">Check-Out</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </header>
+    <main>
+        <h1>Check-Out:</h1>
+        <h2>Select Series:</h2>
+        <section class="wholeform">
+            <form id="form" onsubmit="return validateForm()">
+                <div class="seriesSelect">
+                    <input type="radio" id="asilentvoice" name="series">
+                    <label for="asilentvoice">A Silent Voice</label><br>
+                    <input type="radio" id="ajindemihuman" name="series">
+                    <label for="ajindemihuman">Ajin Demi Human</label><br>
+                    <input type="radio" id="attackontitan" name="series">
+                    <label for="attackontitan">Attack On Titan</label><br>
+                    <input type="radio" id="berserk" name="series">
+                    <label for="berserk">Berserk</label><br>
+                    <input type="radio" id="chainsawman" name="series">
+                    <label for="chainsawman">Chainsaw Man</label><br>
+                    <input type="radio" id="deathnote" name="series">
+                    <label for="deathnote">Deathnote</label><br>
+                    <input type="radio" id="demonslayer" name="series">
+                    <label for="demonslayer">Demon Slayer</label><br>
+                    <input type="radio" id="dune" name="series">
+                    <label for="dune">Dune</label><br>
+                    <input type="radio" id="jujutsukaisen" name="series">
+                    <label for="jujutsukaisen">Jujutsu Kaisen</label><br>
+                    <input type="radio" id="junjiito" name="series">
+                    <label for="junjiito">Junji Ito</label><br>
+                    <input type="radio" id="neongenesisevangelion" name="series">
+                    <label for="neongenesisevangelion">Neon Genesis Evangelion</label><br>
+                    <input type="radio" id="toyoureternity" name="series">
+                    <label for="toyoureternity">To Your Eternity</label><br>
+                    <input type="radio" id="tokyoghoul" name="series">
+                    <label for="tokyoghoul">Tokyo Ghoul</label><br>
+                    <input type="radio" id="you" name="series">
+                    <label for="you">You</label><br>
+                    </select>
+                </div>
+                <div id="startdate">
+                    <h2>Select Start Check-Out date:</h2>
+                    <p><input type="date" name="checkoutDate"></p>
+                </div>
+                <div id="enddate">
+                    <h2>Select End Check-Out date:</h2>
+                    <p><input type="date" name="checkoutDate"></p>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <script>
+            function validateForm() {
+                alert('Thank you for checking out!')
+            }
+        </script>
+    </main>
+</body>
+<footer>
+    <p>Follow Us for more!</p>
+    <a href="https://www.facebook.com/login/"><img src="Other Photos/facebook.png" alt="facebook" height="50"></a>
+    <a href="https://www.instagram.com/accounts/login/"><img src="Other Photos/instagram.png" alt="instagram" height="50"></a>
+    <a href="https://twitter.com/i/flow/login"><img src="Other Photos/twitter (2).png" alt="twitter" height="50"></a>
+    <a href="https://www.pinterest.com/"><img src="Other Photos/pinterest.png" alt="pinterest" height="50"></a>
+</footer>
+</html>
